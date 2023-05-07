@@ -1,0 +1,44 @@
+# Exam-System
+This is a Java project for an online test application that allows users to take a multiple-choice quiz. The project utilizes Java Swing and AWT packages to create a graphical user interface. The application retrieves the questions from a MySQL database and displays them one by one with their answer options.
+
+
+Mysql Database queries-
+
+create database mydatabase7;
+
+use mydatabase7;
+
+CREATE TABLE questions (
+
+id INT PRIMARY KEY AUTO_INCREMENT,
+
+question_text VARCHAR(255) NOT NULL,
+
+answer_options VARCHAR(255) NOT NULL,
+
+correct_answer_index INT NOT NULL
+
+);     
+
+INSERT INTO questions (question_text, answer_options, correct_answer_index) VALUES 
+
+('What is the default value of boolean type in Java?', 'true,false,null,0', 2),
+
+
+('What is the maximum value of byte type in Java?', '128,255,256,512', 2),
+
+('Which keyword is used to create an object in Java?', 'new,class,object,create', 0),
+
+('What is the name of the method used to convert a string to an integer in Java?', 'toInt,parseInt,convertToInt,castToInt', 1),
+
+('What is the name of the method used to get the length of a string in Java?', 'length(),size(),count(),len()', 0),
+
+('What is the name of the method used to compare two strings in Java?', 'equals(),compare(),compareTo(),equal()', 0),
+
+('Which keyword is used to declare a constant variable in Java?', 'final,const,static,readonly', 0),
+
+('Which keyword is used to create a subclass in Java?', 'extends,super,subclass,parent', 0),
+
+('Which keyword is used to exit from a loop in Java?', 'break,continue,return,exit', 0),
+
+('Which one among these is not a keyword?','class,int,get,if',2);
